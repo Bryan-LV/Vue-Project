@@ -1,0 +1,105 @@
+
+:root{
+    --font:'Work Sans', sans-serif;
+    --bg:#47B783;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: var(--bg);
+    height:100vh;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width:85%;
+    height:80%;
+    margin:auto;
+    background-color: #fff;
+    color:white;
+}
+
+/* Landing Page Styles */
+
+.landingPage{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.landingPageLogo{
+    width:250px;
+    height:250px;
+    margin:0 auto;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    top:-7%;
+}
+
+.landingPage h1{
+    font-size:4em;
+    font-family: var(--font);
+    font-weight: 100;
+    color:black;
+}
+
+.landingPage .landingPageButton{
+    padding:10px;
+    border-radius:5px;
+    position: relative;
+    top:6%;
+    background-color:var(--bg);
+    color:white;
+    font-family: var(--font);
+    font-size: 1em;
+}
+
+a[href="income"]{
+    transition: all 4s ease-in-out;
+}
+
+
+/* Income Page styles */
+
+.incomePage{
+    width:100%;
+    height:80%;
+    background:var(--bg);
+    position: absolute;
+    top:0;
+    right:-100vw;
+    top:10%;
+}
+
+.incomePageInner{
+    width:85%;
+    height:100%;
+    background: #fff;
+    margin: auto;
+}
+
+.incomePageInner h1{
+    color:black;
+}
+
+#income-comp{
+    margin-bottom:2em;
+}
+
+#fixed-exp{
+    margin-bottom: 2em;
+}
